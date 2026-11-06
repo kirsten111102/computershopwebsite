@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/image/background_index.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main_content {
+    width: 90%;
+    margin: 1% auto;
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px;
+}
+

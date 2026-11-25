@@ -47,4 +47,20 @@
 
         </div>
     </div>
+    <div id="product_list">
+        {{#each products}}
+        <section class="products">
+            <img src="{{#if this.image}}{{this.image}}{{else}}/image/products/keyboard.png{{/if}}" alt="{{this.name}}">
+            <h3>{{this.name}}</h3>
+            <div class="tag_price">
+                <p>{{this.category}}</p>
+                <p>${{this.price}}</p>
+            </div>
+            <strong>Description:</strong>
+            <p class="description">{{this.description}}</p>
+        </section>
+        {{else}}
+        <p>No products available.</p>
+        {{/each}}
+    </div>
 </div>

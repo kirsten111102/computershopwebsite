@@ -33,8 +33,7 @@
     font-weight: bold;
 }
 
-.filter-item input,
-.filter-item select {
+.filter-item input {
     padding: 8px;
     border: 1px solid #aaa;
     border-radius: 6px;
@@ -58,4 +57,8 @@
     .filter-group {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.filter-item select {
+    padding: 5px 0;
 }

@@ -7,7 +7,7 @@ const {
     updateProduct,
     deleteProduct,
     renderProductsPage,
-} = require('../controllers/productController');
+} = require('../controllers/ProductController');
 
 router.get('/', renderProductsPage);
 router.get('/api', getAllProducts);

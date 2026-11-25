@@ -132,7 +132,7 @@ exports.renderProductsPage = async (req, res) => {
         const parsed = JSON.parse(rawData);
         const products = Array.isArray(parsed) ? parsed : parsed.products || [];
 
-        res.render('products', {
+        res.render('product', {
             products,
             currentPageStyle: 'product.css',
         });

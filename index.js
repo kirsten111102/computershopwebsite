@@ -12,7 +12,7 @@ const productRoutes = require('./routers/ProductRouter');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/products', productRoutes);
+app.use('/products', productRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -26,12 +26,6 @@ app.get('/', (req, res) => {
         currentPageStyle: 'homepage.css'
     });
 })
-
-app.get('/products', (req, res) => {
-    res.render('product', {
-        currentPageStyle: 'product.css'
-    });
-});
 
 app.get('/login', (req, res) => {
     res.render('login', {
